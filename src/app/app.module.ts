@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {AuctionMaterialModule} from "./auction-material/auction-material.module";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
   imports: [
     BrowserModule,
     AppRoutingModule
+    , AuctionMaterialModule
   ],
   //providers: [{provide:LocationStrategy, useClass:HashLocationStrategy}],
   providers: [],
